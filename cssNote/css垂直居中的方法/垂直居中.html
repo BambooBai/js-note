@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	/*方法一*/
+	/*#box{
+		width: 100%;
+		height: 500px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#box div{
+		height: 100px;
+		width: 100px;
+		background: red;
+	}*/
+	/*方法二*/
+		/*#box{
+			width:100%;
+			height: 500px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		#box:before{
+			content:'';
+			display:inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		#box div{
+			display: inline-block;
+			vertical-align: middle;;
+		}*/
+		/*方法三*/
+		/*#box{
+			width:500px;
+			padding-bottom: 100px;
+			padding-top: 100px;
+		}
+		#box div{
+			width:100px;
+			height: 100px;
+			background: red;
+		}*/
+		/*方法四*/
+		/*#box{
+			width:500px;
+			height: 500px;
+			border:1px solid green;
+			position: relative;
+		}
+		#box div{
+			width: 100px;
+			height: 100px;
+			margin:auto 0;
+			position: absolute;
+			top:0;
+			bottom:0;
+			background: red;
+		}*/
+		/*方法五*/
+		#box{
+			width: 500px;
+			height: 500px;
+			position: relative;
+		}
+		#box div{
+			width:100px;
+			height: 100px;
+			position: absolute;
+			margin-top: -50px;
+			top: 50%;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+<div id="box">
+	<div>
+		2332435<br/>
+		34543
+	</div>
+</div>
+</body>
+</html>
